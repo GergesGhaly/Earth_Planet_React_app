@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
 function Model() {
-  const { scene } = useGLTF("../src/assets/earth.glb");
+  const { scene } = useGLTF("../public/earth.glb");
   return <primitive object={scene} scale={1.2} />;
 }
 
