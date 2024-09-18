@@ -27,7 +27,6 @@ function AnimatedModel() {
       end: "bottom top",
       scrub: true, // للتفاعل السلس
       toggleActions: "paly paly reverse play",
-      markers: true,
       onEnter: () => {
         gsap.to(modelRef.current.position, { y: 0, duration: 1 });
       },
@@ -55,7 +54,6 @@ function AnimatedModel() {
       end: "bottom top",
       scrub: true, // للتفاعل السلس
       toggleActions: "play reverse play reverse", // لتطبيق الحركات العكسية عند التمرير لأعلى
-      markers: true,
 
       onEnter: () => {
         gsap.to(modelRef.current.position, { x: 3, duration: 1 }); // الانتقال لليمين
@@ -94,7 +92,6 @@ function AnimatedModel() {
       end: "bottom bottom",
       scrub: true,
       toggleActions: "play reverse play reverse", // لتطبيق الحركات العكسية عند التمرير لأعلى
-      markers: true,
 
       onEnter: () => {
         gsap.to(modelRef.current.position, {
