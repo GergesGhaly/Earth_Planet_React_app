@@ -10,12 +10,17 @@ const PageContantOne = () => {
 
   return (
     <div
+      id="section-1"
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
+        height: `calc(100vh - 70px)`,
         overflow: "hidden",
         color: "#FCFFFF",
+        // scrollSnapAlign: "start"
+        // display:"flex",
+        // justifyContent: "center",
+        // alignItems: "center",
       }}
     >
       <div
@@ -73,5 +78,4 @@ const PageContantOne = () => {
     </div>
   );
 };
-
 export default PageContantOne;

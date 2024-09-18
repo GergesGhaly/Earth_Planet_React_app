@@ -5,6 +5,7 @@ import Header from "./Header";
 import PageContantOne from "./PageContantOne";
 import PageContantTwo from "./PageContantTwo";
 import NotAvailable from "./NotAvailable";
+import PageContantThree from "./PageContantThree";
 function App() {
   return (
     <>
@@ -20,11 +21,13 @@ function App() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          height: "200vh",
+          height: "300vh",
           width: "100%",
-          overflow: "hidden",
-          scrollSnapType: "y",
           boxShadow: "inset 0px 0px 100px 50px rgba(0, 0, 0, 0.8)", // ظل داخلي بلون أسود
+          // scrollSnapType: "y mandatory", // سناب سكرول عمودي
+          // // overflow: "hidden",
+          // overflowY: "scroll", // تمكين التمرير العمودي
+          // scrollBehavior: "smooth", // التمرير السلس
         }}
       >
         <Header />
@@ -35,7 +38,7 @@ function App() {
             left: "50%",
             transform: "translate(-50%, 50%)",
             height: "100vh",
-            width: "100vw",
+            width: "100%",
             zIndex: 2,
           }}
         >
@@ -43,6 +46,7 @@ function App() {
         </div>
         <PageContantOne />
         <PageContantTwo />
+        <PageContantThree />
       </div>
       <NotAvailable />
     </>

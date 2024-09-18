@@ -1,54 +1,44 @@
-const PageContantTwo = () => {
+const PageContantThree = () => {
   // Function to scroll the page up by 100vh
-  const scrollToNextSection = (e) => {
-    e.preventDefault(); // منع السلوك الافتراضي للرابط
-    window.scrollBy({
-      top: window.innerHeight, // التمرير لأسفل بمقدار ارتفاع العرض (100vh)
-      behavior: "smooth", // التمرير بسلاسة
+  const scrollToTop = (e) => {
+    e.preventDefault(); // Prevent the default behavior of the link
+    window.scrollTo({
+      top: 0, // Scroll the page to the top of the viewport (100vh to the top)
+      behavior: "smooth", // Smooth scrolling
     });
   };
-  
+
   return (
     <div
-      id="section-2"
+      id="section-3"
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "flex-end",
         position: "relative",
         width: "100%",
         height: "100vh",
         overflow: "hidden",
         color: "#FCFFFF",
-        // scrollSnapAlign: "start",
+        padding: "20px",
+        // scrollSnapAlign: "start"
       }}
     >
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "start",
+          textAlign: "start",
+          width: "50%",
           padding: "5px 50px",
-          height: "100%",
-          width: "100%",
           color: "white",
-          zIndex: 50,
-          gap: "30px",
+          zIndex: 999999999,
         }}
       >
-        <h6
-          style={{
-            fontSize: "45px",
-            fontWeight: "bold",
-          }}
-        >
-          Hello World From Earth Planet
-        </h6>
         <p
           style={{
-            padding: "10px 0",
-            lineHeight: "2",
-            fontSize: "17px",
+            padding: "15px 0",
+            lineHeight: "1.5",
           }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
@@ -59,19 +49,18 @@ const PageContantTwo = () => {
         </p>
         <a
           href="#"
-          onClick={scrollToNextSection} // Call the scroll function to the top when clicked
+          onClick={scrollToTop} // Call the scroll function to the top when clicked
           style={{
             fontSize: "18px",
             fontWeight: "bold",
             cursor: "pointer",
           }}
         >
-          To Next
+          Back To Top
         </a>
       </div>
-      <div></div>
     </div>
   );
 };
 
-export default PageContantTwo;
+export default PageContantThree;
