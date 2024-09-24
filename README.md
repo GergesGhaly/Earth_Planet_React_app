@@ -1,8 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+First try with 3d models & react-three 💜 
 
-Currently, two official plugins are available:
+The UI was inspired by
+https://www.pinterest.com/pin/600386194107584104/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3d model
+https://sketchfab.com/3d-models/earth-f7a76c63ff1846afb2d606e5c8369c15
+
+background 
+https://wallpapers-hub.art/wallpaper-images/136594.jpg
+
